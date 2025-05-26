@@ -7,62 +7,77 @@
   <title>Crystal Carat DMCC</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #121B26; color: #ffffff;">
+<body>
   <!-- Header -->
-  <header style="background-color: #121B26; padding: 1rem; display: flex; align-items: center; justify-content: space-between;">
-    <img src="logo.png" alt="Crystal Carat Logo" style="height: 60px;" />
-    <nav>
-      <a href="#about" style="color: #EACDC3; margin-right: 1rem; text-decoration: none;">About</a>
-      <a href="#commodities" style="color: #EACDC3; margin-right: 1rem; text-decoration: none;">Commodities</a>
-      <a href="#market" style="color: #EACDC3; margin-right: 1rem; text-decoration: none;">Market Data</a>
-      <a href="#contact" style="color: #EACDC3; text-decoration: none;">Contact</a>
+  <header class="header">
+    <img src="logo.png" alt="Crystal Carat Logo" class="logo" />
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#commodities">Commodities</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Banner -->
-  <section style="text-align: center; padding: 5rem 1rem; background: url('https://images.unsplash.com/photo-1612810809056-5f44a94a0b26?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
-    <h1 style="font-size: 3rem; background-color: rgba(0,0,0,0.6); display: inline-block; padding: 1rem 2rem; color: #EACDC3;">Crystal Carat DMCC</h1>
-    <p style="margin-top: 1rem; font-size: 1.2rem; background-color: rgba(0,0,0,0.5); display: inline-block; padding: 0.5rem 1rem;">Dubai-based Trusted Precious Metals & Commodities Partner</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Crystal Carat DMCC</h1>
+      <p>Dubai-based Trusted Precious Metals & Commodities Partner</p>
+    </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" style="padding: 4rem 2rem; max-width: 900px; margin: auto;">
-    <h2 style="color: #EACDC3;">About Us</h2>
-    <p style="line-height: 1.6;">
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
       Crystal Carat DMCC, headquartered in Dubai’s DMCC Freezone, specializes in trading gold, silver, platinum, copper, and other commodities. Backed by strategic investors, we provide a gateway to responsible sourcing, transparent pricing, and global reach. Our operations are legally compliant and adhere to the highest standards of security and ethics.
     </p>
   </section>
 
   <!-- Commodities Section -->
-  <section id="commodities" style="background-color: #1F2A38; padding: 4rem 2rem;">
-    <h2 style="color: #EACDC3;">Our Commodities</h2>
-    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
-      <li>✔️ Gold (LBMA-standard investment-grade)</li>
-      <li>✔️ Silver (High-purity trading bars)</li>
-      <li>✔️ Platinum (Investment and industrial use)</li>
-      <li>✔️ Copper (Industrial-grade, LME-certified)</li>
-    </ul>
-  </section>
-
-  <!-- Live Market Data Section -->
-  <section id="market" style="padding: 4rem 2rem;">
-    <h2 style="color: #EACDC3;">Live Market Data</h2>
-    <iframe src="https://www.gold.org/widget/gold-price?currency=USD" width="100%" height="300" frameborder="0" style="border: none;"></iframe>
+  <section id="commodities" class="section dark">
+    <h2>Our Commodities</h2>
+    <div class="commodities">
+      <div class="commodity">
+        <h3>Gold</h3>
+        <p>
+          Crystal Carat offers LBMA-certified gold bullion to institutional and retail clients. Our global sourcing and secure logistics ensure high integrity and purity, with flexible investment and hedging options.
+        </p>
+      </div>
+      <div class="commodity">
+        <h3>Silver</h3>
+        <p>
+          From investment bars to high-purity industrial silver, we provide sovereign and private mint products. We also support clients with secure vaulting, transport, and bulk silver handling solutions.
+        </p>
+      </div>
+      <div class="commodity">
+        <h3>Platinum</h3>
+        <p>
+          Platinum from Crystal Carat is tailored for both industrial and investor applications. Our platform ensures direct access to refined platinum with customizable logistics support.
+        </p>
+      </div>
+      <div class="commodity">
+        <h3>Copper</h3>
+        <p>
+          As we expand our base metals portfolio, Crystal Carat facilitates physical copper trades with reliable sourcing, LME compliance, and delivery assurance to fabricators and manufacturers.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" style="padding: 4rem 2rem; background-color: #1F2A38;">
-    <h2 style="color: #EACDC3;">Contact Us</h2>
-    <form action="https://formspree.io/f/xwkgkrnj" method="POST" style="max-width: 600px; margin: auto; display: flex; flex-direction: column;">
-      <input type="text" name="name" placeholder="Your Name" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; border: none;">
-      <input type="email" name="email" placeholder="Your Email" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; border: none;">
-      <textarea name="message" rows="5" placeholder="Your Message" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; border: none;"></textarea>
-      <button type="submit" style="background-color: #EACDC3; color: #121B26; padding: 1rem; border: none; font-weight: bold; cursor: pointer;">Send Message</button>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xwkgkrnj" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer style="text-align: center; padding: 2rem; background-color: #121B26; color: #EACDC3;">
+  <footer class="footer">
     <p>&copy; 2025 Crystal Carat DMCC. All rights reserved.</p>
   </footer>
 </body>
