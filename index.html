@@ -1,135 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crystal Carat DMCC - Gold, Silver, Platinum & Commodities Trading in Dubai" />
   <title>Crystal Carat DMCC</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      color: #333;
-      background-color: #fff;
-    }
-    header {
-      background: #0f3057;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    nav {
-      text-align: center;
-      background: #00587a;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1603200921090-818b5e26e402?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
-      color: #fff;
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    .hero h2 {
-      font-size: 3rem;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    }
-    section {
-      padding: 4rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h3 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #0f3057;
-    }
-    section p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    input, textarea {
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    button {
-      background: #0f3057;
-      color: #fff;
-      border: none;
-      padding: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #00587a;
-      color: #fff;
-    }
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Crystal Carat DMCC</h1>
-    <p>Trusted Precious Metals Partner in Dubai</p>
+<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #121B26; color: #ffffff;">
+  <!-- Header -->
+  <header style="background-color: #121B26; padding: 1rem; display: flex; align-items: center; justify-content: space-between;">
+    <img src="logo.png" alt="Crystal Carat Logo" style="height: 60px;" />
+    <nav>
+      <a href="#about" style="color: #EACDC3; margin-right: 1rem; text-decoration: none;">About</a>
+      <a href="#commodities" style="color: #EACDC3; margin-right: 1rem; text-decoration: none;">Commodities</a>
+      <a href="#market" style="color: #EACDC3; margin-right: 1rem; text-decoration: none;">Market Data</a>
+      <a href="#contact" style="color: #EACDC3; text-decoration: none;">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Hero Banner -->
+  <section style="text-align: center; padding: 5rem 1rem; background: url('https://images.unsplash.com/photo-1612810809056-5f44a94a0b26?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+    <h1 style="font-size: 3rem; background-color: rgba(0,0,0,0.6); display: inline-block; padding: 1rem 2rem; color: #EACDC3;">Crystal Carat DMCC</h1>
+    <p style="margin-top: 1rem; font-size: 1.2rem; background-color: rgba(0,0,0,0.5); display: inline-block; padding: 0.5rem 1rem;">Dubai-based Trusted Precious Metals & Commodities Partner</p>
+  </section>
 
-  <div class="hero">
-    <h2>Ethical, Secure & Transparent Gold Trade</h2>
-  </div>
-
-  <section id="about">
-    <h3>About Us</h3>
-    <p>
-      Crystal Carat DMCC is a Dubai-based precious metals company offering responsible sourcing, secure storage, and international trade of gold and other valuable commodities. We pride ourselves on transparency, legal compliance, and strong international partnerships.
+  <!-- About Section -->
+  <section id="about" style="padding: 4rem 2rem; max-width: 900px; margin: auto;">
+    <h2 style="color: #EACDC3;">About Us</h2>
+    <p style="line-height: 1.6;">
+      Crystal Carat DMCC, headquartered in Dubai’s DMCC Freezone, specializes in trading gold, silver, platinum, copper, and other commodities. Backed by strategic investors, we provide a gateway to responsible sourcing, transparent pricing, and global reach. Our operations are legally compliant and adhere to the highest standards of security and ethics.
     </p>
   </section>
 
-  <section id="contact">
-    <h3>Contact Us</h3>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  <!-- Commodities Section -->
+  <section id="commodities" style="background-color: #1F2A38; padding: 4rem 2rem;">
+    <h2 style="color: #EACDC3;">Our Commodities</h2>
+    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+      <li>✔️ Gold (LBMA-standard investment-grade)</li>
+      <li>✔️ Silver (High-purity trading bars)</li>
+      <li>✔️ Platinum (Investment and industrial use)</li>
+      <li>✔️ Copper (Industrial-grade, LME-certified)</li>
+    </ul>
+  </section>
+
+  <!-- Live Market Data Section -->
+  <section id="market" style="padding: 4rem 2rem;">
+    <h2 style="color: #EACDC3;">Live Market Data</h2>
+    <iframe src="https://www.gold.org/widget/gold-price?currency=USD" width="100%" height="300" frameborder="0" style="border: none;"></iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="padding: 4rem 2rem; background-color: #1F2A38;">
+    <h2 style="color: #EACDC3;">Contact Us</h2>
+    <form action="https://formspree.io/f/xwkgkrnj" method="POST" style="max-width: 600px; margin: auto; display: flex; flex-direction: column;">
+      <input type="text" name="name" placeholder="Your Name" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; border: none;">
+      <input type="email" name="email" placeholder="Your Email" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; border: none;">
+      <textarea name="message" rows="5" placeholder="Your Message" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; border: none;"></textarea>
+      <button type="submit" style="background-color: #EACDC3; color: #121B26; padding: 1rem; border: none; font-weight: bold; cursor: pointer;">Send Message</button>
     </form>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 2rem; background-color: #121B26; color: #EACDC3;">
     <p>&copy; 2025 Crystal Carat DMCC. All rights reserved.</p>
   </footer>
 </body>
