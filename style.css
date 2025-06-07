@@ -114,3 +114,57 @@ body {
   padding: 2rem;
   font-size: 0.9rem;
 }
+
+.full-width-contact {
+  background-color: #1F2A38;
+  padding: 3rem 2rem;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 45%;
+  color: #fff;
+}
+
+.contact-left h3,
+.contact-right h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.contact-left p,
+.contact-right p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.vertical-divider {
+  width: 1px;
+  background-color: #ccc;
+  height: auto;
+  min-height: 120px;
+  align-self: stretch;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vertical-divider {
+    display: none;
+  }
+}
+
